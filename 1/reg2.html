@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раширенная регистрация</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="page1.html">Контакты</a></li>
+                <li><a href="page2.html">Развлечения</a></li>
+                <li><a href="registration.html"><h4>Регистрация</h4></a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<form enctype="multipart/form-data" action="#" method="POST">
+    <fieldset><legend><h4>Анкета для привелигерованного пользователя</h4></legend>
+        <div>
+            <label for="city">Выберите город</label>
+            <select id="city" name="city">
+                <option value="city1">Санкт-Петербрг</option>
+                <option value="city2">Москва</option>
+            </select>
+        </div>
+        <div>
+            <label for="name">Введите имя</label>
+            <input id="name" type="text" name="name">
+        </div>
+        <div>
+            <label for="fname">Введите фамилию</label>
+            <input id="fname" type="text" name="fname">
+        </div>
+        <div>
+            <label for="age">Укажите возраст</label>
+            <input placeholder="старше 18 лет" min="18" id="age" type="number" name="age">
+        </div>
+        <div>
+            <label for="photo">Загрузить фото профиля</label>
+            <input id="photo" type="file" accept="image/*" name="photo">
+        </div>
+        <div>
+            <span>Из какого источника узнали о нашем сате</span>
+            <label><input type="checkbox" value="1" name="from[]">Реклама</label>
+            <label><input type="checkbox" value="2" name="from[]">Из журнала</label>
+            <label><input type="checkbox" value="3" name="from[]">Совет друга</label>
+
+        </div>
+            <span>Согласны на получение выгодных предложений?</span>
+            <label><input type="radio" name="rss" value="yes">Да</label>
+            <label><input type="radio" name="rss" value="no">Нет</label>
+        </div>
+        <div>
+            
+            <label><input type="range"></label>
+        </div>
+
+    </fieldset>
+</form>
+<div>
+    <input type="submit" value="Зарегистрироваться">
+</div>
+</body>
+</html>
