@@ -4,125 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="flex-grid.css">
+    <title>Flex</title>
     <link rel="stylesheet" href="flex.css">
 </head>
 <body>
-    <header>
+<header class="flex-row">
+                <a class="navbar-title flex" href="#">Ссылка 1</a>
+                <a class="navbar-title flex" href="#">Ссылка 2</a>
+                <a class="navbar-title flex" href="#">Ссылка 3</a>
+                <a class="navbar-title flex" href="#">Ссылка 4</a>
+                <a class="navbar-title flex" href="#">Ссылка 5</a>
+</header>
+<div class="flex-row">
+<aside class="flex-column col-2">
+        <a class="navbar-title flex" href="#">Вертикальная ссылка 1</a>
+        <a class="navbar-title flex" href="#">Вертикальная ссылка 2</a>
+        <a class="navbar-title flex" href="#">Вертикальная ссылка 3</a>
+        <a class="navbar-title flex" href="#">Вертикальная ссылка 4</a>
+</aside>
+<main class="col-10">
         <div class="flex-row">
-        <div class="col-12 flex-row container navbar">
-            <nav>
-                <a class="navbar-title elem" href="#">Ссылка 1</a>
-                <a class="navbar-title elem" href="#">Ссылка 2</a>
-                <a class="navbar-title elem" href="#">Ссылка 3</a>
-                <a class="navbar-title elem" href="#">Ссылка 4</a>
-                <a class="navbar-title elem" href="#">Ссылка 5</a>
-            </nav>
+            <div class="offset-2 col-8">
+                <div class="img1"><img src="img_.jpg" alt="Широкая картинка"></div>
+            </div>
         </div>
-    </div>
-    </header>
-    <div class="main-block flex-row">
-    <aside class="col-2 flex-column">
-        <a class="elem" href="#">Вертикальная ссылка 1</a>
-        <a class="elem" href="#">Вертикальная ссылка 2</a>
-        <a class="elem" href="#">Вертикальная ссылка 3</a>
-        <a class="elem" href="#">Вертикальная ссылка 4</a>
 
-    </aside>
-    <main class="col-10">
-        <div class="flex-row wrap">
-            <div class="col-12 flex-row elem">
-                <img src="img_.jpg" alt="Широкая картинка">
+        <div class="flex-row">
+            <div class="col-3 elem img1 mrg">
+                    <h3>Заголовок</h3>
+                    <img src="img.jpg">
+            </div>
+            <div class="col-3 elem img1">
+                    <h3>Заголовок</h3>
+                    <img src="img.jpg">
+            </div>
+            <div class="col-3 elem img1">
+                    <h3>Заголовок</h3>
+                    <img src="img.jpg">
+            </div>
+            <div class="col-3 elem img1">
+                    <h3>Заголовок</h3>
+                    <img src="img.jpg">
             </div>
         </div>
+
         <div class="flex-row">
-            <div class="col-3 flex-row elem">
-                <article>
-                    <h3>Заголовок</h3>
-                    <img src="img.jpg">
-                </article>
-            </div>
-            <div class="col-3 flex-row elem">
-                <article>
-                    <h3>Заголовок</h3>
-                    <img src="img.jpg">
-                </article>
-            </div>
-            <div class="col-3 flex-row elem">
-                <article>
-                    <h3>Заголовок</h3>
-                    <img src="img.jpg">
-                </article>
-            </div>
-            <div class="col-3 flex-row elem">
-                <article>
-                    <h3>Заголовок</h3>
-                    <img src="img.jpg">
-                </article>
-            </div>
-        </div>
-        <div class="flex-row">
-            <div class="col-6 flex-row elem">
-                <article>
-                    <div class="col-6">
-                    <img src="img.jpg">
-                </div>
-                    <div class="col-6"> Текст текст текст текст текст </div>
-                </article>
-            </div>
-            <div class="col-3 flex-row elem">
-                <article>
-                    <p>Текст текст текст текст текст</p>
-                </article>
-            </div>
-                <div class="col-3 flex-row elem">
-                    <article>
-                        Текст текст текст текст текст
-                    </article>
-                    </div>
-            </div>
-            <div class="flex-row">
-                <div class="col-3 flex-row elem">
-                    <article>
-                        <p>Текст текст текст текст текст</p>
-                    </article>
-                </div>
-                    <div class="col-3 flex-row elem">
-                        <article>
-                            Текст текст текст текст текст
-                        </article>
-                        </div>
-                        <div class="col-6 flex-row elem">
-                            <article>
-                                <div class="col-6">
-                                <img src="img.jpg">
-                            </div>
-                                <div class="col-6"> Текст текст текст текст текст </div>
-                            </article>
-                        </div>
-                </div>
+            <div class="col-6 elem">
                 <div class="flex-row">
-                    <div class="col-6 flex-row elem">
-                        <div>
-                            <img src="img.jpg">
-                        </div>
-                        <div>
-                            <img src="img.jpg">
-                        </div>
-                        <div>
-                            <p>Текст, текст, текст</p>
-                        </div>
+                    <div class="col-6 flex-column">
+                        <img src="img.jpg">
                     </div>
-                    <div class="col-6 flex-row wrap">
-                        <div class="col-12 flex-row elem">Текст текст текст</div>
-                        <div class="col-12 flex-row elem">Текст текст текст</div>
+                    <div class="col-6">
+                        <div><p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p></div>
                     </div>
                 </div>
+            </div>
+             <div class="col-3 elem">
+                    <p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p>
+            </div>
+            <div class="col-3 elem">
+                    <p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p>
+            </div>
         </div>
-    </main>
+
+        <div class="flex-row">
+            <div class="col-3 elem">
+                    <p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p>
+            </div>
+             <div class="col-3 elem">
+                    <p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p>
+            </div>
+            <div class="col-6 elem">
+                <div class="flex-row">
+                    <div class="col-6 flex-column">
+                        <img src="img.jpg">
+                    </div>
+                    <div class="col-6">
+                        <div><p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="col-6">
+                <div class="elem flex-row">
+                    <div class="col-6 flex-column">
+                        <div class="p"><p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p></div>
+                        <img src="img.jpg">
+                    </div>
+                    <div class="col-6">
+                        <img src="img.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 flex-row wrap">
+                <div class="col-12 flew-row elem p"><p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p></div>
+                <div class="col-12 flex-row elem p"><p>Википе́дия — общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики. Расположена по адресу wikipedia.org. Владелец сайта — американская некоммерческая организация «Фонд Викимедиа», имеющая 37 региональных представительств.</p></div>
+            </div>
+        </div>
+
+
+
+</main>
 </div>
-    <footer class="elem col-12">FOOTER</footer>
-    
+    <footer class="col-12">FOOTER</footer>
 </body>
 </html>
