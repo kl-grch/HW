@@ -1,0 +1,135 @@
+* {
+
+}
+/*Применение стилей ко всем элементам*/
+
+body {
+    /*размер шрифта*/
+    font-size: 32px;
+    margin: 0;
+}
+
+/*Цвета*/
+.light-pink-background {
+    background-color: #EEE2DC; /*rgb, rgba - прозрачность*/
+}
+
+.light-pink-text{
+    color:#EEE2DC;
+}
+
+header{
+    background-color: #AC3B61;
+}
+
+footer {
+    background-color:#123C69;
+}
+
+footer a {
+    color: #BAB2B5;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/*ul ко всем применяется, header ul - к ul в header*/
+header ul {
+    margin: 0;
+    list-style-type: none;
+    /*оформление маркеров списка*/
+}
+
+.container {
+   /* width - не используется для контейнеров*/ 
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto; /*height: 100%*/
+}
+
+.text-shadow-red,
+.text-shadow-blue {
+    text-shadow: 0 2px  3px rgba(222, 255, 255, 0.5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; /*transparant прозрачность*/
+}
+
+.text-shadow-red {
+    background-color:rgb(238, 55, 23);
+}
+
+text-shadow-blue {
+    background-color:turquoise
+}
+
+header {
+    display: flex;
+    /*align-items: flex-start;*/
+    line-height: 100px;
+}
+
+form {
+    margin-right: 3rem;
+    margin-left: auto; /*адаптивный отсуп*/
+}
+
+.menu > li {
+    display: inline-block;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+}
+
+.submenu {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu > ul {
+    /*скрытие элементов*/
+    /*opacity: 0; */
+    /* dispaly: none; */
+    /* height: 0; overflow: hiden; */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    z-index: 4;
+}
+
+.submenu:hover ul {
+    height: 300px;
+    transition: height 1s;
+    background-color:darkorange;
+}
+
+form > span {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    color: rgb(26, 26, 27);
+}
+
+header input[type="text"] {
+    border-style: none;
+    outline-style: none;
+
+    color: rgb(255, 60, 0);
+    font-size: 1.5rem;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 0.7rem 0.7rem 0.7rem 2.5rem; 
+}
